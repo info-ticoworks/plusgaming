@@ -3,7 +3,7 @@
 # generadas dinámicamente y solo deberían ser modificadas mediante filtros de WordPress.
 # Cualquier cambio en las directivas que hay entre esos marcadores serán sobrescritas.
 <IfModule mod_rewrite.c>
-RewriteEngine Off
+RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
